@@ -81,12 +81,13 @@
     // 返回数据处理
     model.callback =^(CMHttpResponseModel *result, NSError *error) {
         
-        if (result.isSucc) {// 成功,做自己的逻辑
+        if (result.state ==CMReponseCodeState_Success) {// 成功,做自己的逻辑
             DDLog(@"%@",result.data);
-            mAlertView(@"提示", @"网络请求成功");
             
         }else {// 失败,弹框提示
-            mAlertView(@"提示", result.alertMsg);
+//            mAlertView(@"提示", result.alertMsg);
+            [CMHttpStateTools showHtttpStateView:result.state];
+            
             DDLog(@"%@",result.error);
         }
         
@@ -103,12 +104,13 @@
     model.appendUrl =kTestDonationGetListURL;
     model.callback =^(CMHttpResponseModel *result, NSError *error) {
         
-        if (result.isSucc) {// 成功,做自己的逻辑
+        if (result.state ==CMReponseCodeState_Success) {// 成功,做自己的逻辑
             DDLog(@"%@",result.data);
-            mAlertView(@"提示", @"网络请求成功");
 
         }else {// 失败,弹框提示
-            mAlertView(@"提示", result.alertMsg);
+//            mAlertView(@"提示", result.alertMsg);
+            [CMHttpStateTools showHtttpStateView:result.state];
+
             DDLog(@"%@",result.error);
         }
         
@@ -125,11 +127,12 @@
     model.paramDic =[paramsDic mutableCopy];
     model.callback =^(CMHttpResponseModel *result, NSError *error) {
         
-        if (result.isSucc) {// 成功,做自己的逻辑
+        if (result.state ==CMReponseCodeState_Success) {// 成功,做自己的逻辑
             DDLog(@"%@",result.data);
-            mAlertView(@"提示", @"网络请求成功");
         }else {// 失败,弹框提示
-            mAlertView(@"提示", result.alertMsg);
+//            mAlertView(@"提示", result.alertMsg);
+            [CMHttpStateTools showHtttpStateView:result.state];
+
             DDLog(@"%@",result.error);
         }
         

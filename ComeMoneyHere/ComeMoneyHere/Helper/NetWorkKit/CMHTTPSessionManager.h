@@ -10,10 +10,15 @@
 #import "CMHttpRequestModel.h"
 
 
+
+
 @interface CMHTTPSessionManager : AFHTTPSessionManager
 
 + (instancetype)sharedHttpSessionManager;
+// 请求正常的Http
 -(void)sendHttpRequestParam:(CMHttpRequestModel *)model;
+
+
 
 
 

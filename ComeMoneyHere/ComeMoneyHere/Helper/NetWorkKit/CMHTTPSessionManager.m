@@ -31,15 +31,21 @@ static CMHTTPSessionManager *_httpInstance = nil;
 -(instancetype)init {
     if (self = [super init]) {
         self.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html",@"text/plain", nil];
+        
+        AFJSONResponseSerializer *response = [AFJSONResponseSerializer serializer];
+        // 防止返回Null的问题
+        response.removesKeysWithNullValues = YES;
     }
     return self;
 }
 
+// 请求正常的Http
 -(void)sendHttpRequestParam:(CMHttpRequestModel *)model {
   
     NSURLSessionDataTask *task = nil;
+    NSString *urlStr;
+    urlStr =[NSString stringWithFormat:@"%@%@",model.localHost,model.appendUrl];
 
-    NSString *urlStr =[NSString stringWithFormat:@"%@%@",kTestHttpHost,model.appendUrl];
     if (model.type ==CMHttpType_POST) {// POST 请求
         
         task = [self POST:urlStr
@@ -54,7 +60,7 @@ static CMHTTPSessionManager *_httpInstance = nil;
                       [model requestErrorCallback:error];
                   }];
     }else { // GET 请求
-        task = [self GET:model.appendUrl
+        task = [self GET:urlStr
               parameters:model.paramDic
                 progress:nil
                  success:^(NSURLSessionDataTask * _Nonnull task,
@@ -66,4 +72,5 @@ static CMHTTPSessionManager *_httpInstance = nil;
                  }];
     }
 }
+
 @end
