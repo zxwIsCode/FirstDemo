@@ -16,3 +16,4 @@ UIKIT_EXTERN NSString *const kTestDonationGetListURL;  //查询爱心捐款列�
 UIKIT_EXTERN NSString *const kTestDonationGetPersonURL;  //查询爱心捐款人的列表
 
 
+#define kTabBarButtonBaseTag 100

@@ -83,9 +83,6 @@
 		050C077C1DDA9DA1008450CD /* UITextField+Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 050C07781DDA9DA1008450CD /* UITextField+Font.m */; };
 		050C077D1DDA9DA1008450CD /* UITextView+Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 050C077A1DDA9DA1008450CD /* UITextView+Font.m */; };
 		050C07831DDA9FC2008450CD /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 050C07821DDA9FC2008450CD /* libsqlite3.tbd */; };
-		050C07961DDAA93E008450CD /* CMMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 050C07951DDAA93E008450CD /* CMMainTabBarViewController.m */; };
-		050C07991DDAA973008450CD /* CMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 050C07981DDAA973008450CD /* CMBaseViewController.m */; };
-		050C079C1DDAA990008450CD /* CMNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 050C079B1DDAA990008450CD /* CMNavViewController.m */; };
 		050C079F1DDAAA59008450CD /* CMCommondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 050C079E1DDAAA59008450CD /* CMCommondViewController.m */; };
 		050C07A21DDAAA67008450CD /* CMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 050C07A11DDAAA67008450CD /* CMHomeViewController.m */; };
 		050C07A51DDAAA76008450CD /* CMMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 050C07A41DDAAA76008450CD /* CMMeViewController.m */; };
@@ -175,6 +172,13 @@
 		05FF0A541E149FD9006E3FB2 /* THTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A481E149FD9006E3FB2 /* THTipsView.m */; };
 		05FF0A551E149FD9006E3FB2 /* WidgetInitObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A4A1E149FD9006E3FB2 /* WidgetInitObject.m */; };
 		05FF0A581E14A039006E3FB2 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A571E14A039006E3FB2 /* AppDelegate.mm */; };
+		05FF0A6F1E14A28C006E3FB2 /* CMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A5D1E14A28C006E3FB2 /* CMBaseViewController.m */; };
+		05FF0A701E14A28C006E3FB2 /* CMMainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A5F1E14A28C006E3FB2 /* CMMainTabBarViewController.m */; };
+		05FF0A711E14A28C006E3FB2 /* CMNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A611E14A28C006E3FB2 /* CMNavViewController.m */; };
+		05FF0A721E14A28C006E3FB2 /* CMNewFetureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A631E14A28C006E3FB2 /* CMNewFetureViewController.m */; };
+		05FF0A751E14A28C006E3FB2 /* CMCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A6C1E14A28C006E3FB2 /* CMCustomTabBar.m */; };
+		05FF0A761E14A28C006E3FB2 /* CMTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A6E1E14A28C006E3FB2 /* CMTabBarButton.m */; };
+		05FF0A7B1E14A3B3006E3FB2 /* CMSendTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A7A1E14A3B3006E3FB2 /* CMSendTaskViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -347,12 +351,6 @@
 		050C07791DDA9DA1008450CD /* UITextView+Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Font.h"; sourceTree = "<group>"; };
 		050C077A1DDA9DA1008450CD /* UITextView+Font.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Font.m"; sourceTree = "<group>"; };
 		050C07821DDA9FC2008450CD /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		050C07941DDAA93E008450CD /* CMMainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMMainTabBarViewController.h; sourceTree = "<group>"; };
-		050C07951DDAA93E008450CD /* CMMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMMainTabBarViewController.m; sourceTree = "<group>"; };
-		050C07971DDAA973008450CD /* CMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMBaseViewController.h; sourceTree = "<group>"; };
-		050C07981DDAA973008450CD /* CMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMBaseViewController.m; sourceTree = "<group>"; };
-		050C079A1DDAA990008450CD /* CMNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMNavViewController.h; sourceTree = "<group>"; };
-		050C079B1DDAA990008450CD /* CMNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMNavViewController.m; sourceTree = "<group>"; };
 		050C079D1DDAAA59008450CD /* CMCommondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCommondViewController.h; sourceTree = "<group>"; };
 		050C079E1DDAAA59008450CD /* CMCommondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCommondViewController.m; sourceTree = "<group>"; };
 		050C07A01DDAAA67008450CD /* CMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMHomeViewController.h; sourceTree = "<group>"; };
@@ -512,6 +510,20 @@
 		05FF0A561E14A039006E3FB2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		05FF0A571E14A039006E3FB2 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		05FF0A591E14A068006E3FB2 /* CMHHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMHHeader.h; sourceTree = "<group>"; };
+		05FF0A5C1E14A28C006E3FB2 /* CMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMBaseViewController.h; sourceTree = "<group>"; };
+		05FF0A5D1E14A28C006E3FB2 /* CMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMBaseViewController.m; sourceTree = "<group>"; };
+		05FF0A5E1E14A28C006E3FB2 /* CMMainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMMainTabBarViewController.h; sourceTree = "<group>"; };
+		05FF0A5F1E14A28C006E3FB2 /* CMMainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMMainTabBarViewController.m; sourceTree = "<group>"; };
+		05FF0A601E14A28C006E3FB2 /* CMNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMNavViewController.h; sourceTree = "<group>"; };
+		05FF0A611E14A28C006E3FB2 /* CMNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMNavViewController.m; sourceTree = "<group>"; };
+		05FF0A621E14A28C006E3FB2 /* CMNewFetureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMNewFetureViewController.h; sourceTree = "<group>"; };
+		05FF0A631E14A28C006E3FB2 /* CMNewFetureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMNewFetureViewController.m; sourceTree = "<group>"; };
+		05FF0A6B1E14A28C006E3FB2 /* CMCustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCustomTabBar.h; sourceTree = "<group>"; };
+		05FF0A6C1E14A28C006E3FB2 /* CMCustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCustomTabBar.m; sourceTree = "<group>"; };
+		05FF0A6D1E14A28C006E3FB2 /* CMTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMTabBarButton.h; sourceTree = "<group>"; };
+		05FF0A6E1E14A28C006E3FB2 /* CMTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMTabBarButton.m; sourceTree = "<group>"; };
+		05FF0A791E14A3B3006E3FB2 /* CMSendTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMSendTaskViewController.h; sourceTree = "<group>"; };
+		05FF0A7A1E14A3B3006E3FB2 /* CMSendTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMSendTaskViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -935,43 +947,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		050C078C1DDAA8C3008450CD /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				050C078D1DDAA8C3008450CD /* Controllers */,
-				050C078E1DDAA8C3008450CD /* Models */,
-				050C078F1DDAA8C3008450CD /* Views */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		050C078D1DDAA8C3008450CD /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				050C07941DDAA93E008450CD /* CMMainTabBarViewController.h */,
-				050C07951DDAA93E008450CD /* CMMainTabBarViewController.m */,
-				050C07971DDAA973008450CD /* CMBaseViewController.h */,
-				050C07981DDAA973008450CD /* CMBaseViewController.m */,
-				050C079A1DDAA990008450CD /* CMNavViewController.h */,
-				050C079B1DDAA990008450CD /* CMNavViewController.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		050C078E1DDAA8C3008450CD /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		050C078F1DDAA8C3008450CD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		050C07901DDAA8C3008450CD /* Me */ = {
 			isa = PBXGroup;
 			children = (
@@ -1123,7 +1098,8 @@
 		050DEC0B1DD9BD19009D0129 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				050C078C1DDAA8C3008450CD /* Main */,
+				05FF0A781E14A378006E3FB2 /* SendTask */,
+				05FF0A5A1E14A28C006E3FB2 /* Main */,
 				050C07841DDAA8C3008450CD /* CommondCode */,
 				050C07881DDAA8C3008450CD /* Home */,
 				050C07901DDAA8C3008450CD /* Me */,
@@ -1378,6 +1354,58 @@
 			path = PublicView;
 			sourceTree = "<group>";
 		};
+		05FF0A5A1E14A28C006E3FB2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				05FF0A5B1E14A28C006E3FB2 /* Controllers */,
+				05FF0A691E14A28C006E3FB2 /* Models */,
+				05FF0A6A1E14A28C006E3FB2 /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		05FF0A5B1E14A28C006E3FB2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				05FF0A5C1E14A28C006E3FB2 /* CMBaseViewController.h */,
+				05FF0A5D1E14A28C006E3FB2 /* CMBaseViewController.m */,
+				05FF0A5E1E14A28C006E3FB2 /* CMMainTabBarViewController.h */,
+				05FF0A5F1E14A28C006E3FB2 /* CMMainTabBarViewController.m */,
+				05FF0A601E14A28C006E3FB2 /* CMNavViewController.h */,
+				05FF0A611E14A28C006E3FB2 /* CMNavViewController.m */,
+				05FF0A621E14A28C006E3FB2 /* CMNewFetureViewController.h */,
+				05FF0A631E14A28C006E3FB2 /* CMNewFetureViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		05FF0A691E14A28C006E3FB2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		05FF0A6A1E14A28C006E3FB2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				05FF0A6B1E14A28C006E3FB2 /* CMCustomTabBar.h */,
+				05FF0A6C1E14A28C006E3FB2 /* CMCustomTabBar.m */,
+				05FF0A6D1E14A28C006E3FB2 /* CMTabBarButton.h */,
+				05FF0A6E1E14A28C006E3FB2 /* CMTabBarButton.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		05FF0A781E14A378006E3FB2 /* SendTask */ = {
+			isa = PBXGroup;
+			children = (
+				05FF0A791E14A3B3006E3FB2 /* CMSendTaskViewController.h */,
+				05FF0A7A1E14A3B3006E3FB2 /* CMSendTaskViewController.m */,
+			);
+			name = SendTask;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1549,6 +1577,7 @@
 				050C077B1DDA9DA1008450CD /* UILabel+Font.m in Sources */,
 				05FF09CC1E149A41006E3FB2 /* SDWebImageDownloaderOperation.m in Sources */,
 				050C07671DDA994A008450CD /* AFAutoPurgingImageCache.m in Sources */,
+				05FF0A751E14A28C006E3FB2 /* CMCustomTabBar.m in Sources */,
 				050C07021DDA991C008450CD /* MJRefreshAutoGifFooter.m in Sources */,
 				05FF09721E149A05006E3FB2 /* Base64Util.m in Sources */,
 				05FF0A551E149FD9006E3FB2 /* WidgetInitObject.m in Sources */,
@@ -1560,6 +1589,7 @@
 				05FF0A131E149AB4006E3FB2 /* CMWechatPayManager.m in Sources */,
 				050C07661DDA994A008450CD /* README.md in Sources */,
 				050C06BC1DDA9909008450CD /* IQUIView+Hierarchy.m in Sources */,
+				05FF0A7B1E14A3B3006E3FB2 /* CMSendTaskViewController.m in Sources */,
 				050C06B91DDA9909008450CD /* IQNSArray+Sort.m in Sources */,
 				050C06FF1DDA991C008450CD /* MJRefreshComponent.m in Sources */,
 				050C07001DDA991C008450CD /* MJRefreshFooter.m in Sources */,
@@ -1577,7 +1607,6 @@
 				050C07061DDA991C008450CD /* MJRefreshBackNormalFooter.m in Sources */,
 				05FF0A4F1E149FD9006E3FB2 /* GWTextField.m in Sources */,
 				05FF09C91E149A41006E3FB2 /* SDWebImageCompat.m in Sources */,
-				050C07991DDAA973008450CD /* CMBaseViewController.m in Sources */,
 				05FF0A011E149A4C006E3FB2 /* TYImageCache.m in Sources */,
 				050C06BF1DDA9909008450CD /* IQKeyboardManager.m in Sources */,
 				050C06FD1DDA991C008450CD /* MJRefreshAutoFooter.m in Sources */,
@@ -1599,8 +1628,10 @@
 				050C076B1DDA994A008450CD /* UIAlertView+AFNetworking.m in Sources */,
 				050DEBE01DD9BCFE009D0129 /* ViewController.m in Sources */,
 				050C06BE1DDA9909008450CD /* IQUIWindow+Hierarchy.m in Sources */,
+				05FF0A711E14A28C006E3FB2 /* CMNavViewController.m in Sources */,
 				050C06BB1DDA9909008450CD /* IQUITextFieldView+Additions.m in Sources */,
 				050C07A21DDAAA67008450CD /* CMHomeViewController.m in Sources */,
+				05FF0A701E14A28C006E3FB2 /* CMMainTabBarViewController.m in Sources */,
 				05FF09D01E149A41006E3FB2 /* UIImage+GIF.m in Sources */,
 				050C06C11DDA9909008450CD /* IQTextView.m in Sources */,
 				050C072C1DDA993E008450CD /* FMDatabaseQueue.m in Sources */,
@@ -1646,6 +1677,7 @@
 				05FF0A4B1E149FD9006E3FB2 /* CMCustomViewFactory.m in Sources */,
 				05FF09C71E149A41006E3FB2 /* NSData+ImageContentType.m in Sources */,
 				05FF0A581E14A039006E3FB2 /* AppDelegate.mm in Sources */,
+				05FF0A721E14A28C006E3FB2 /* CMNewFetureViewController.m in Sources */,
 				05FF0A2A1E149BD4006E3FB2 /* CMHttpStateTools.m in Sources */,
 				050C06BD1DDA9909008450CD /* IQUIViewController+Additions.m in Sources */,
 				05FF09D31E149A41006E3FB2 /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -1656,16 +1688,16 @@
 				050C076F1DDA994A008450CD /* UIRefreshControl+AFNetworking.m in Sources */,
 				05FF09741E149A05006E3FB2 /* CoreLabel.m in Sources */,
 				050C072A1DDA993E008450CD /* FMDatabaseAdditions.m in Sources */,
+				05FF0A6F1E14A28C006E3FB2 /* CMBaseViewController.m in Sources */,
 				05FF09CF1E149A41006E3FB2 /* UIButton+WebCache.m in Sources */,
 				05FF09FE1E149A4C006E3FB2 /* NSMutableAttributedString+TY.m in Sources */,
-				050C07961DDAA93E008450CD /* CMMainTabBarViewController.m in Sources */,
 				050C065D1DDA98C3008450CD /* UIImage+Color.m in Sources */,
 				050C07611DDA994A008450CD /* AFURLConnectionOperation.m in Sources */,
 				050C070F1DDA991C008450CD /* UIView+MJExtension.m in Sources */,
 				050C071B1DDA9933008450CD /* NSObject+YYModel.m in Sources */,
 				050C07041DDA991C008450CD /* MJRefreshAutoStateFooter.m in Sources */,
 				050C07A51DDAAA76008450CD /* CMMeViewController.m in Sources */,
-				050C079C1DDAA990008450CD /* CMNavViewController.m in Sources */,
+				05FF0A761E14A28C006E3FB2 /* CMTabBarButton.m in Sources */,
 				050C06C61DDA9909008450CD /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				050C07621DDA994A008450CD /* AFURLRequestSerialization.m in Sources */,
 				050C075F1DDA994A008450CD /* AFNetworkReachabilityManager.m in Sources */,

@@ -17,13 +17,9 @@
 #pragma mark - Init
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     self.navigationController.navigationBar.translucent = NO;
     self.automaticallyAdjustsScrollViewInsets = NO;
-//    //导航栏背景图
-//    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar.png"] forBarMetrics:UIBarMetricsDefault];
-//    //背景颜色，
-//    self.view.backgroundColor = [UIColor colorWithRed:226/255.0 green:226/255.0 blue:226/255.0 alpha:1];
     
     [self dependOnKindToViewShow];
     self.view.backgroundColor =[UIColor whiteColor];
@@ -56,30 +52,36 @@
             [self customNavigationRighItem];
             [self customNavigationLeftItem];
             break;
-            
+        case CMNavTypeNoLeftItem:
+             self.navigationController.navigationBar.hidden =NO;
+            [self customNavigationTitleView];
+            [self customNavigationRighItem];
+
         default:
             DDLog(@"未知Nav状态");
             break;
     }
     
 }
-// 在合适的位置改变NavBar的颜色
-//-(UIStatusBarStyle)preferredStatusBarStyle {
-//    return UIStatusBarStyleDefault;
-//}
+
 
 //定制导航栏上的titleView
 - (void)customNavigationTitleView
 {
     NSString *titleStr =[self customNavigationTitleViewTitleStr];
-    UILabel *label = [CMCustomViewFactory createLabel:CGRectMake(0, 5, 100, 34) title:titleStr color:[UIColor colorWithRed:30/255.0f green:160/255.0f blue:230/255.0f alpha:1] font:[UIFont systemFontOfSize:22] textAlignment:NSTextAlignmentCenter];
+    UILabel *label = [CMCustomViewFactory createLabel:CGRectMake(Num_Zero, 5, 100, 34) title:titleStr color:[UIColor whiteColor] font:[UIFont systemFontOfSize:19 *kAppScale] textAlignment:NSTextAlignmentCenter];
     self.navigationItem.titleView = label;
 }
 
 //定制导航栏左边的按钮
 - (void)customNavigationLeftItem
 {
-    UIButton * leftButton = [CMCustomViewFactory  createButton:CGRectMake(0, 0, 60, 34) title:@"分类" backgourdImage:[UIImage imageNamed:@"buttonbar_action.png"]];
+//    UIButton * leftButton = [CMCustomViewFactory  createButton:CGRectMake(0, 0, 60, 34) title:@"分类" backgourdImage:[UIImage imageNamed:@"icon_fanhui"]];
+    UIButton *leftButton =[UIButton buttonWithType:UIButtonTypeCustom];
+    leftButton.frame = CGRectMake(-10, 0, 30, 34);
+//    leftButton.backgroundColor =[UIColor redColor];
+    [leftButton setImage:[UIImage imageNamed:@"icon_fanhui"] forState:UIControlStateNormal];
+    
     [leftButton addTarget:self action:@selector(navigationLeftButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc]initWithCustomView:leftButton];
     self.navigationItem.leftBarButtonItem = leftItem;
@@ -90,7 +92,11 @@
 {
     NSString *titleStr =[self customNavigationRightItemTitle];
     
-    UIButton * rightButton = [CMCustomViewFactory  createButton:CGRectMake(0, 0, 60, 34) title:titleStr backgourdImage:[UIImage imageNamed:@"buttonbar_action.png"]];
+    UIButton * rightButton = [CMCustomViewFactory  createButton:CGRectMake(Num_Zero, Num_Zero, Ten*6, Ten*3) title:titleStr backgourdImage:[UIImage imageNamed:@"icon_rightItemBg"]];
+    rightButton.titleLabel.font =[UIFont systemFontOfSize:15 *kAppScale];
+    [rightButton setTitleColor:[UIColor darkTextColor] forState:UIControlStateHighlighted];
+    [rightButton setBackgroundImage:[UIImage imageNamed:@"icon_rightItemBg"] forState:UIControlStateHighlighted];
+    [rightButton setAdjustsImageWhenDisabled:NO];
     [rightButton addTarget:self action:@selector(navigationRightButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithCustomView:rightButton];
     self.navigationItem.rightBarButtonItem = rightItem;
@@ -101,6 +107,7 @@
 -(CMNavType)getNavType {
     return CMNavTypeNoRightItem;
 }
+
 -(NSString *)customNavigationRightItemTitle {
     return @"设置";
 }
@@ -108,8 +115,6 @@
 -(NSString *)customNavigationTitleViewTitleStr {
     return self.title;
 }
-
-
 - (void)navigationLeftButtonClick:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];
@@ -118,15 +123,4 @@
 {
     
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end
