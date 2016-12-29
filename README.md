@@ -83,4 +83,24 @@ DDLog(@"%@",result.error);
 CMHttpRequestModel *model =[[CMHttpRequestModel alloc]init];
 只有在自己的函数内部可以有用，出了函数就自己销毁了，真好！
 不过还是要说下它的缺点，即您的request参数不能成为类的成员属性，更不能在一个方法内发送2个request，切记！
+
+5.关于如何开启新项目来对接我的空项目的问题：
+
+（1）删除并移动自己的新项目
+删除新项目的AppDelegate.h 和.m 文件，
+移动其他 的如：Main.storyboard ,ViewController.h 和.m 以及info.plist等到Supporting Files 的文件夹中
+
+（2）添加空项目中的库到新项目中
+添加的类型如下：Helper（侧重tool），Utils（侧重View），General，Classes，Vendor，Resource（可导可不导）
+
+（3）修改PCH文件名字以及路径
+
+（4）按照空项目中的引用类库导入对应的类库
+
+    1.第三方库中有fmdb的：导入libsqlite3.tbd 库
+    2.有分享的，按照ShareSDK的要求导入对应的库
+
+（5）编译通过就愉快的写代码吧！
 其他就没发现有什么问题，如发现问题，欢迎联系QQ1824496534：备注：新项目。谢谢！
+
+
