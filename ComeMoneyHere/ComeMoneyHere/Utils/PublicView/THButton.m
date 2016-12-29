@@ -34,6 +34,8 @@
     self.titleLabel.width = self.width;
     self.titleLabel.height = self.height - self.titleLabel.y;
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
+    self.titleLabel.font =[UIFont systemFontOfSize:14];
+
 }
 
 @end

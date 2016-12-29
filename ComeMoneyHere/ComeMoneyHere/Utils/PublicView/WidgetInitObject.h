@@ -31,7 +31,6 @@
  *
  *  @param rect   位置
  *  @param aColor 字体颜色
- *  @param font   字体
  *
  *  @return UILabel *
  */

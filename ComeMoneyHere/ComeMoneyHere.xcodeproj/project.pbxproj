@@ -7,15 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		050C06401DDA97BB008450CD /* DisplayHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 050C062D1DDA97BB008450CD /* DisplayHelper.m */; };
-		050C06421DDA97BB008450CD /* GWTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 050C06311DDA97BB008450CD /* GWTextField.m */; };
-		050C06431DDA97BB008450CD /* THActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 050C06331DDA97BB008450CD /* THActionSheet.m */; };
-		050C06441DDA97BB008450CD /* THButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 050C06351DDA97BB008450CD /* THButton.m */; };
-		050C06451DDA97BB008450CD /* THDatePickerSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 050C06371DDA97BB008450CD /* THDatePickerSheet.m */; };
-		050C06471DDA97BB008450CD /* THTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 050C063B1DDA97BB008450CD /* THTextView.m */; };
-		050C06481DDA97BB008450CD /* THTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 050C063D1DDA97BB008450CD /* THTipsView.m */; };
-		050C06491DDA97BB008450CD /* WidgetInitObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 050C063F1DDA97BB008450CD /* WidgetInitObject.m */; };
-		050C065A1DDA98C3008450CD /* NSDate+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 050C064E1DDA98C3008450CD /* NSDate+Addition.m */; };
 		050C065C1DDA98C3008450CD /* UIButton+EnlargeEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 050C06521DDA98C3008450CD /* UIButton+EnlargeEdge.m */; };
 		050C065D1DDA98C3008450CD /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 050C06541DDA98C3008450CD /* UIImage+Color.m */; };
 		050C065E1DDA98C3008450CD /* UIImage+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 050C06561DDA98C3008450CD /* UIImage+Size.m */; };
@@ -125,7 +116,6 @@
 		050C07E01DDAD882008450CD /* navigationbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 050C07D31DDAD882008450CD /* navigationbar.png */; };
 		050C07E11DDAD882008450CD /* navigationbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 050C07D41DDAD882008450CD /* navigationbar@2x.png */; };
 		050C07E21DDAD882008450CD /* navigationbar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 050C07D51DDAD882008450CD /* navigationbar@3x.png */; };
-		050C07E61DDAD982008450CD /* CMCustomViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 050C07E51DDAD982008450CD /* CMCustomViewFactory.m */; };
 		050DEBDA1DD9BCFE009D0129 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 050DEBD91DD9BCFE009D0129 /* main.m */; };
 		050DEBE01DD9BCFE009D0129 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 050DEBDF1DD9BCFE009D0129 /* ViewController.m */; };
 		050DEBE31DD9BCFE009D0129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050DEBE11DD9BCFE009D0129 /* Main.storyboard */; };
@@ -133,7 +123,6 @@
 		050DEBE81DD9BCFE009D0129 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050DEBE61DD9BCFE009D0129 /* LaunchScreen.storyboard */; };
 		050DEBF31DD9BCFE009D0129 /* ComeMoneyHereTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 050DEBF21DD9BCFE009D0129 /* ComeMoneyHereTests.m */; };
 		050DEBFE1DD9BCFE009D0129 /* ComeMoneyHereUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 050DEBFD1DD9BCFE009D0129 /* ComeMoneyHereUITests.m */; };
-		050DEC131DD9BEB4009D0129 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 050DEC121DD9BEB4009D0129 /* AppDelegate.m */; };
 		05FF09721E149A05006E3FB2 /* Base64Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF09681E149A05006E3FB2 /* Base64Util.m */; };
 		05FF09731E149A05006E3FB2 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF096A1E149A05006E3FB2 /* GTMBase64.m */; };
 		05FF09741E149A05006E3FB2 /* CoreLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF096E1E149A05006E3FB2 /* CoreLabel.m */; };
@@ -165,7 +154,6 @@
 		05FF0A051E149A4C006E3FB2 /* TYTextContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF09F81E149A4C006E3FB2 /* TYTextContainer.m */; };
 		05FF0A061E149A4C006E3FB2 /* TYTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF09FA1E149A4C006E3FB2 /* TYTextStorage.m */; };
 		05FF0A071E149A4C006E3FB2 /* TYViewStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF09FD1E149A4C006E3FB2 /* TYViewStorage.m */; };
-		05FF0A0B1E149A92006E3FB2 /* NHPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A0A1E149A92006E3FB2 /* NHPageViewController.m */; };
 		05FF0A121E149AB4006E3FB2 /* CMUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A0D1E149AB4006E3FB2 /* CMUserDefaults.m */; };
 		05FF0A131E149AB4006E3FB2 /* CMWechatPayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A101E149AB4006E3FB2 /* CMWechatPayManager.m */; };
 		05FF0A1B1E149B2C006E3FB2 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05FF0A181E149B2C006E3FB2 /* libWeChatSDK.a */; };
@@ -173,6 +161,20 @@
 		05FF0A281E149BD4006E3FB2 /* CMHttpResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A201E149BD4006E3FB2 /* CMHttpResponseModel.m */; };
 		05FF0A291E149BD4006E3FB2 /* CMHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A221E149BD4006E3FB2 /* CMHTTPSessionManager.m */; };
 		05FF0A2A1E149BD4006E3FB2 /* CMHttpStateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A241E149BD4006E3FB2 /* CMHttpStateTools.m */; };
+		05FF0A2D1E149F26006E3FB2 /* NSDate+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A2C1E149F26006E3FB2 /* NSDate+Addition.m */; };
+		05FF0A301E149F33006E3FB2 /* UIImageView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A2F1E149F33006E3FB2 /* UIImageView+CornerRadius.m */; };
+		05FF0A4B1E149FD9006E3FB2 /* CMCustomViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A341E149FD9006E3FB2 /* CMCustomViewFactory.m */; };
+		05FF0A4C1E149FD9006E3FB2 /* NHPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A371E149FD9006E3FB2 /* NHPageViewController.m */; };
+		05FF0A4D1E149FD9006E3FB2 /* CMUDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A3A1E149FD9006E3FB2 /* CMUDButton.m */; };
+		05FF0A4E1E149FD9006E3FB2 /* DisplayHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A3C1E149FD9006E3FB2 /* DisplayHelper.m */; };
+		05FF0A4F1E149FD9006E3FB2 /* GWTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A3E1E149FD9006E3FB2 /* GWTextField.m */; };
+		05FF0A501E149FD9006E3FB2 /* THActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A401E149FD9006E3FB2 /* THActionSheet.m */; };
+		05FF0A511E149FD9006E3FB2 /* THButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A421E149FD9006E3FB2 /* THButton.m */; };
+		05FF0A521E149FD9006E3FB2 /* THDatePickerSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A441E149FD9006E3FB2 /* THDatePickerSheet.m */; };
+		05FF0A531E149FD9006E3FB2 /* THTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A461E149FD9006E3FB2 /* THTextView.m */; };
+		05FF0A541E149FD9006E3FB2 /* THTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A481E149FD9006E3FB2 /* THTipsView.m */; };
+		05FF0A551E149FD9006E3FB2 /* WidgetInitObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A4A1E149FD9006E3FB2 /* WidgetInitObject.m */; };
+		05FF0A581E14A039006E3FB2 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A571E14A039006E3FB2 /* AppDelegate.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -194,25 +196,6 @@
 
 /* Begin PBXFileReference section */
 		050C06291DDA941F008450CD /* ComeMoneyPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComeMoneyPrefix.pch; sourceTree = "<group>"; };
-		050C062A1DDA96DD008450CD /* CMHHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMHHeader.h; sourceTree = "<group>"; };
-		050C062C1DDA97BB008450CD /* DisplayHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayHelper.h; sourceTree = "<group>"; };
-		050C062D1DDA97BB008450CD /* DisplayHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayHelper.m; sourceTree = "<group>"; };
-		050C06301DDA97BB008450CD /* GWTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWTextField.h; sourceTree = "<group>"; };
-		050C06311DDA97BB008450CD /* GWTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWTextField.m; sourceTree = "<group>"; };
-		050C06321DDA97BB008450CD /* THActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THActionSheet.h; sourceTree = "<group>"; };
-		050C06331DDA97BB008450CD /* THActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THActionSheet.m; sourceTree = "<group>"; };
-		050C06341DDA97BB008450CD /* THButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THButton.h; sourceTree = "<group>"; };
-		050C06351DDA97BB008450CD /* THButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THButton.m; sourceTree = "<group>"; };
-		050C06361DDA97BB008450CD /* THDatePickerSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THDatePickerSheet.h; sourceTree = "<group>"; };
-		050C06371DDA97BB008450CD /* THDatePickerSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THDatePickerSheet.m; sourceTree = "<group>"; };
-		050C063A1DDA97BB008450CD /* THTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTextView.h; sourceTree = "<group>"; };
-		050C063B1DDA97BB008450CD /* THTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTextView.m; sourceTree = "<group>"; };
-		050C063C1DDA97BB008450CD /* THTipsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTipsView.h; sourceTree = "<group>"; };
-		050C063D1DDA97BB008450CD /* THTipsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTipsView.m; sourceTree = "<group>"; };
-		050C063E1DDA97BB008450CD /* WidgetInitObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetInitObject.h; sourceTree = "<group>"; };
-		050C063F1DDA97BB008450CD /* WidgetInitObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WidgetInitObject.m; sourceTree = "<group>"; };
-		050C064D1DDA98C3008450CD /* NSDate+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Addition.h"; sourceTree = "<group>"; };
-		050C064E1DDA98C3008450CD /* NSDate+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Addition.m"; sourceTree = "<group>"; };
 		050C06511DDA98C3008450CD /* UIButton+EnlargeEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+EnlargeEdge.h"; sourceTree = "<group>"; };
 		050C06521DDA98C3008450CD /* UIButton+EnlargeEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EnlargeEdge.m"; sourceTree = "<group>"; };
 		050C06531DDA98C3008450CD /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
@@ -403,8 +386,6 @@
 		050C07D31DDAD882008450CD /* navigationbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationbar.png; sourceTree = "<group>"; };
 		050C07D41DDAD882008450CD /* navigationbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationbar@2x.png"; sourceTree = "<group>"; };
 		050C07D51DDAD882008450CD /* navigationbar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigationbar@3x.png"; sourceTree = "<group>"; };
-		050C07E41DDAD982008450CD /* CMCustomViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCustomViewFactory.h; sourceTree = "<group>"; };
-		050C07E51DDAD982008450CD /* CMCustomViewFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCustomViewFactory.m; sourceTree = "<group>"; };
 		050DEBD51DD9BCFE009D0129 /* ComeMoneyHere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComeMoneyHere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		050DEBD91DD9BCFE009D0129 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		050DEBDE1DD9BCFE009D0129 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -419,8 +400,6 @@
 		050DEBF91DD9BCFE009D0129 /* ComeMoneyHereUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComeMoneyHereUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		050DEBFD1DD9BCFE009D0129 /* ComeMoneyHereUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComeMoneyHereUITests.m; sourceTree = "<group>"; };
 		050DEBFF1DD9BCFE009D0129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		050DEC111DD9BEB4009D0129 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		050DEC121DD9BEB4009D0129 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		05FF09671E149A05006E3FB2 /* Base64Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Util.h; sourceTree = "<group>"; };
 		05FF09681E149A05006E3FB2 /* Base64Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64Util.m; sourceTree = "<group>"; };
 		05FF09691E149A05006E3FB2 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
@@ -485,9 +464,6 @@
 		05FF09FB1E149A4C006E3FB2 /* TYTextStorageProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTextStorageProtocol.h; sourceTree = "<group>"; };
 		05FF09FC1E149A4C006E3FB2 /* TYViewStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYViewStorage.h; sourceTree = "<group>"; };
 		05FF09FD1E149A4C006E3FB2 /* TYViewStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYViewStorage.m; sourceTree = "<group>"; };
-		05FF0A081E149A92006E3FB2 /* NHPageContentViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPageContentViewControllerDelegate.h; sourceTree = "<group>"; };
-		05FF0A091E149A92006E3FB2 /* NHPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPageViewController.h; sourceTree = "<group>"; };
-		05FF0A0A1E149A92006E3FB2 /* NHPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHPageViewController.m; sourceTree = "<group>"; };
 		05FF0A0C1E149AB4006E3FB2 /* CMUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMUserDefaults.h; sourceTree = "<group>"; };
 		05FF0A0D1E149AB4006E3FB2 /* CMUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMUserDefaults.m; sourceTree = "<group>"; };
 		05FF0A0F1E149AB4006E3FB2 /* CMWechatPayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMWechatPayManager.h; sourceTree = "<group>"; };
@@ -506,6 +482,36 @@
 		05FF0A241E149BD4006E3FB2 /* CMHttpStateTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMHttpStateTools.m; sourceTree = "<group>"; };
 		05FF0A251E149BD4006E3FB2 /* CMRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMRequestDelegate.h; sourceTree = "<group>"; };
 		05FF0A261E149BD4006E3FB2 /* CMResponseDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMResponseDelegate.h; sourceTree = "<group>"; };
+		05FF0A2B1E149F26006E3FB2 /* NSDate+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Addition.h"; sourceTree = "<group>"; };
+		05FF0A2C1E149F26006E3FB2 /* NSDate+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Addition.m"; sourceTree = "<group>"; };
+		05FF0A2E1E149F33006E3FB2 /* UIImageView+CornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CornerRadius.h"; sourceTree = "<group>"; };
+		05FF0A2F1E149F33006E3FB2 /* UIImageView+CornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CornerRadius.m"; sourceTree = "<group>"; };
+		05FF0A331E149FD9006E3FB2 /* CMCustomViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMCustomViewFactory.h; sourceTree = "<group>"; };
+		05FF0A341E149FD9006E3FB2 /* CMCustomViewFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCustomViewFactory.m; sourceTree = "<group>"; };
+		05FF0A351E149FD9006E3FB2 /* NHPageContentViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPageContentViewControllerDelegate.h; sourceTree = "<group>"; };
+		05FF0A361E149FD9006E3FB2 /* NHPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHPageViewController.h; sourceTree = "<group>"; };
+		05FF0A371E149FD9006E3FB2 /* NHPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHPageViewController.m; sourceTree = "<group>"; };
+		05FF0A391E149FD9006E3FB2 /* CMUDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMUDButton.h; sourceTree = "<group>"; };
+		05FF0A3A1E149FD9006E3FB2 /* CMUDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMUDButton.m; sourceTree = "<group>"; };
+		05FF0A3B1E149FD9006E3FB2 /* DisplayHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayHelper.h; sourceTree = "<group>"; };
+		05FF0A3C1E149FD9006E3FB2 /* DisplayHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayHelper.m; sourceTree = "<group>"; };
+		05FF0A3D1E149FD9006E3FB2 /* GWTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GWTextField.h; sourceTree = "<group>"; };
+		05FF0A3E1E149FD9006E3FB2 /* GWTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GWTextField.m; sourceTree = "<group>"; };
+		05FF0A3F1E149FD9006E3FB2 /* THActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THActionSheet.h; sourceTree = "<group>"; };
+		05FF0A401E149FD9006E3FB2 /* THActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THActionSheet.m; sourceTree = "<group>"; };
+		05FF0A411E149FD9006E3FB2 /* THButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THButton.h; sourceTree = "<group>"; };
+		05FF0A421E149FD9006E3FB2 /* THButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THButton.m; sourceTree = "<group>"; };
+		05FF0A431E149FD9006E3FB2 /* THDatePickerSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THDatePickerSheet.h; sourceTree = "<group>"; };
+		05FF0A441E149FD9006E3FB2 /* THDatePickerSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THDatePickerSheet.m; sourceTree = "<group>"; };
+		05FF0A451E149FD9006E3FB2 /* THTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTextView.h; sourceTree = "<group>"; };
+		05FF0A461E149FD9006E3FB2 /* THTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTextView.m; sourceTree = "<group>"; };
+		05FF0A471E149FD9006E3FB2 /* THTipsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTipsView.h; sourceTree = "<group>"; };
+		05FF0A481E149FD9006E3FB2 /* THTipsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTipsView.m; sourceTree = "<group>"; };
+		05FF0A491E149FD9006E3FB2 /* WidgetInitObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetInitObject.h; sourceTree = "<group>"; };
+		05FF0A4A1E149FD9006E3FB2 /* WidgetInitObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WidgetInitObject.m; sourceTree = "<group>"; };
+		05FF0A561E14A039006E3FB2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		05FF0A571E14A039006E3FB2 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		05FF0A591E14A068006E3FB2 /* CMHHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMHHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -535,34 +541,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		050C062B1DDA97BB008450CD /* PublicView */ = {
-			isa = PBXGroup;
-			children = (
-				050C062C1DDA97BB008450CD /* DisplayHelper.h */,
-				050C062D1DDA97BB008450CD /* DisplayHelper.m */,
-				050C06301DDA97BB008450CD /* GWTextField.h */,
-				050C06311DDA97BB008450CD /* GWTextField.m */,
-				050C06321DDA97BB008450CD /* THActionSheet.h */,
-				050C06331DDA97BB008450CD /* THActionSheet.m */,
-				050C06341DDA97BB008450CD /* THButton.h */,
-				050C06351DDA97BB008450CD /* THButton.m */,
-				050C06361DDA97BB008450CD /* THDatePickerSheet.h */,
-				050C06371DDA97BB008450CD /* THDatePickerSheet.m */,
-				050C063A1DDA97BB008450CD /* THTextView.h */,
-				050C063B1DDA97BB008450CD /* THTextView.m */,
-				050C063C1DDA97BB008450CD /* THTipsView.h */,
-				050C063D1DDA97BB008450CD /* THTipsView.m */,
-				050C063E1DDA97BB008450CD /* WidgetInitObject.h */,
-				050C063F1DDA97BB008450CD /* WidgetInitObject.m */,
-			);
-			path = PublicView;
-			sourceTree = "<group>";
-		};
 		050C064A1DDA98C3008450CD /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				050C064D1DDA98C3008450CD /* NSDate+Addition.h */,
-				050C064E1DDA98C3008450CD /* NSDate+Addition.m */,
+				05FF0A2E1E149F33006E3FB2 /* UIImageView+CornerRadius.h */,
+				05FF0A2F1E149F33006E3FB2 /* UIImageView+CornerRadius.m */,
+				05FF0A2B1E149F26006E3FB2 /* NSDate+Addition.h */,
+				05FF0A2C1E149F26006E3FB2 /* NSDate+Addition.m */,
 				050C06511DDA98C3008450CD /* UIButton+EnlargeEdge.h */,
 				050C06521DDA98C3008450CD /* UIButton+EnlargeEdge.m */,
 				050C06531DDA98C3008450CD /* UIImage+Color.h */,
@@ -1068,15 +1053,6 @@
 			path = defailt;
 			sourceTree = "<group>";
 		};
-		050C07E31DDAD933008450CD /* Factory */ = {
-			isa = PBXGroup;
-			children = (
-				050C07E41DDAD982008450CD /* CMCustomViewFactory.h */,
-				050C07E51DDAD982008450CD /* CMCustomViewFactory.m */,
-			);
-			path = Factory;
-			sourceTree = "<group>";
-		};
 		050DEBCC1DD9BCFE009D0129 = {
 			isa = PBXGroup;
 			children = (
@@ -1102,7 +1078,7 @@
 			isa = PBXGroup;
 			children = (
 				050DEC101DD9BDDB009D0129 /* Helper(Tool) */,
-				050DEC0F1DD9BDCD009D0129 /* Utils(View) */,
+				05FF0A311E149FD9006E3FB2 /* Utils (View) */,
 				050DEC0E1DD9BDB4009D0129 /* General */,
 				050DEC0B1DD9BD19009D0129 /* Classes */,
 				050DEC0C1DD9BD5C009D0129 /* Vendor */,
@@ -1188,27 +1164,14 @@
 		050DEC0E1DD9BDB4009D0129 /* General */ = {
 			isa = PBXGroup;
 			children = (
-				050DEC111DD9BEB4009D0129 /* AppDelegate.h */,
-				050DEC121DD9BEB4009D0129 /* AppDelegate.m */,
+				05FF0A561E14A039006E3FB2 /* AppDelegate.h */,
+				05FF0A571E14A039006E3FB2 /* AppDelegate.mm */,
 				050C07711DDA9997008450CD /* CMHDemoDefine.h */,
 				050C07721DDA9997008450CD /* CMHDemoDefine.m */,
+				05FF0A591E14A068006E3FB2 /* CMHHeader.h */,
 				050C06291DDA941F008450CD /* ComeMoneyPrefix.pch */,
-				050C062A1DDA96DD008450CD /* CMHHeader.h */,
 			);
 			path = General;
-			sourceTree = "<group>";
-		};
-		050DEC0F1DD9BDCD009D0129 /* Utils(View) */ = {
-			isa = PBXGroup;
-			children = (
-				05FF0A081E149A92006E3FB2 /* NHPageContentViewControllerDelegate.h */,
-				05FF0A091E149A92006E3FB2 /* NHPageViewController.h */,
-				05FF0A0A1E149A92006E3FB2 /* NHPageViewController.m */,
-				050C07E31DDAD933008450CD /* Factory */,
-				050C062B1DDA97BB008450CD /* PublicView */,
-			);
-			name = "Utils(View)";
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		050DEC101DD9BDDB009D0129 /* Helper(Tool) */ = {
@@ -1366,6 +1329,53 @@
 				05FF0A261E149BD4006E3FB2 /* CMResponseDelegate.h */,
 			);
 			path = NetWorkKit;
+			sourceTree = "<group>";
+		};
+		05FF0A311E149FD9006E3FB2 /* Utils (View) */ = {
+			isa = PBXGroup;
+			children = (
+				05FF0A321E149FD9006E3FB2 /* Factory */,
+				05FF0A351E149FD9006E3FB2 /* NHPageContentViewControllerDelegate.h */,
+				05FF0A361E149FD9006E3FB2 /* NHPageViewController.h */,
+				05FF0A371E149FD9006E3FB2 /* NHPageViewController.m */,
+				05FF0A381E149FD9006E3FB2 /* PublicView */,
+			);
+			name = "Utils (View)";
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		05FF0A321E149FD9006E3FB2 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				05FF0A331E149FD9006E3FB2 /* CMCustomViewFactory.h */,
+				05FF0A341E149FD9006E3FB2 /* CMCustomViewFactory.m */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		05FF0A381E149FD9006E3FB2 /* PublicView */ = {
+			isa = PBXGroup;
+			children = (
+				05FF0A391E149FD9006E3FB2 /* CMUDButton.h */,
+				05FF0A3A1E149FD9006E3FB2 /* CMUDButton.m */,
+				05FF0A3B1E149FD9006E3FB2 /* DisplayHelper.h */,
+				05FF0A3C1E149FD9006E3FB2 /* DisplayHelper.m */,
+				05FF0A3D1E149FD9006E3FB2 /* GWTextField.h */,
+				05FF0A3E1E149FD9006E3FB2 /* GWTextField.m */,
+				05FF0A3F1E149FD9006E3FB2 /* THActionSheet.h */,
+				05FF0A401E149FD9006E3FB2 /* THActionSheet.m */,
+				05FF0A411E149FD9006E3FB2 /* THButton.h */,
+				05FF0A421E149FD9006E3FB2 /* THButton.m */,
+				05FF0A431E149FD9006E3FB2 /* THDatePickerSheet.h */,
+				05FF0A441E149FD9006E3FB2 /* THDatePickerSheet.m */,
+				05FF0A451E149FD9006E3FB2 /* THTextView.h */,
+				05FF0A461E149FD9006E3FB2 /* THTextView.m */,
+				05FF0A471E149FD9006E3FB2 /* THTipsView.h */,
+				05FF0A481E149FD9006E3FB2 /* THTipsView.m */,
+				05FF0A491E149FD9006E3FB2 /* WidgetInitObject.h */,
+				05FF0A4A1E149FD9006E3FB2 /* WidgetInitObject.m */,
+			);
+			path = PublicView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1536,29 +1546,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				05FF09FF1E149A4C006E3FB2 /* TYAttributedLabel.m in Sources */,
-				050C065A1DDA98C3008450CD /* NSDate+Addition.m in Sources */,
 				050C077B1DDA9DA1008450CD /* UILabel+Font.m in Sources */,
-				05FF0A0B1E149A92006E3FB2 /* NHPageViewController.m in Sources */,
 				05FF09CC1E149A41006E3FB2 /* SDWebImageDownloaderOperation.m in Sources */,
 				050C07671DDA994A008450CD /* AFAutoPurgingImageCache.m in Sources */,
 				050C07021DDA991C008450CD /* MJRefreshAutoGifFooter.m in Sources */,
 				05FF09721E149A05006E3FB2 /* Base64Util.m in Sources */,
+				05FF0A551E149FD9006E3FB2 /* WidgetInitObject.m in Sources */,
 				05FF09CB1E149A41006E3FB2 /* SDWebImageDownloader.m in Sources */,
 				05FF09751E149A05006E3FB2 /* CoreLabelModel.m in Sources */,
 				050C06C01DDA9909008450CD /* IQKeyboardReturnKeyHandler.m in Sources */,
 				050C06BA1DDA9909008450CD /* IQUIScrollView+Additions.m in Sources */,
-				050C06451DDA97BB008450CD /* THDatePickerSheet.m in Sources */,
 				050C070A1DDA991C008450CD /* MJRefreshStateHeader.m in Sources */,
 				05FF0A131E149AB4006E3FB2 /* CMWechatPayManager.m in Sources */,
 				050C07661DDA994A008450CD /* README.md in Sources */,
-				050C06431DDA97BB008450CD /* THActionSheet.m in Sources */,
 				050C06BC1DDA9909008450CD /* IQUIView+Hierarchy.m in Sources */,
 				050C06B91DDA9909008450CD /* IQNSArray+Sort.m in Sources */,
 				050C06FF1DDA991C008450CD /* MJRefreshComponent.m in Sources */,
 				050C07001DDA991C008450CD /* MJRefreshFooter.m in Sources */,
 				050C075E1DDA994A008450CD /* AFHTTPSessionManager.m in Sources */,
 				05FF0A051E149A4C006E3FB2 /* TYTextContainer.m in Sources */,
-				050C06401DDA97BB008450CD /* DisplayHelper.m in Sources */,
 				050C071C1DDA9933008450CD /* YYClassInfo.m in Sources */,
 				05FF0A031E149A4C006E3FB2 /* TYLinkTextStorage.m in Sources */,
 				05FF09D51E149A41006E3FB2 /* UIView+WebCacheOperation.m in Sources */,
@@ -1567,12 +1573,13 @@
 				050C07601DDA994A008450CD /* AFSecurityPolicy.m in Sources */,
 				050C07051DDA991C008450CD /* MJRefreshBackGifFooter.m in Sources */,
 				050C065C1DDA98C3008450CD /* UIButton+EnlargeEdge.m in Sources */,
+				05FF0A521E149FD9006E3FB2 /* THDatePickerSheet.m in Sources */,
 				050C07061DDA991C008450CD /* MJRefreshBackNormalFooter.m in Sources */,
+				05FF0A4F1E149FD9006E3FB2 /* GWTextField.m in Sources */,
 				05FF09C91E149A41006E3FB2 /* SDWebImageCompat.m in Sources */,
 				050C07991DDAA973008450CD /* CMBaseViewController.m in Sources */,
 				05FF0A011E149A4C006E3FB2 /* TYImageCache.m in Sources */,
 				050C06BF1DDA9909008450CD /* IQKeyboardManager.m in Sources */,
-				050C06421DDA97BB008450CD /* GWTextField.m in Sources */,
 				050C06FD1DDA991C008450CD /* MJRefreshAutoFooter.m in Sources */,
 				050C06FE1DDA991C008450CD /* MJRefreshBackFooter.m in Sources */,
 				05FF0A001E149A4C006E3FB2 /* TYDrawStorage.m in Sources */,
@@ -1588,8 +1595,6 @@
 				050C075C1DDA994A008450CD /* AFHTTPRequestOperation.m in Sources */,
 				05FF0A061E149A4C006E3FB2 /* TYTextStorage.m in Sources */,
 				050C065F1DDA98C3008450CD /* UIView+Frame.m in Sources */,
-				050C06491DDA97BB008450CD /* WidgetInitObject.m in Sources */,
-				050C06471DDA97BB008450CD /* THTextView.m in Sources */,
 				050C06C31DDA9909008450CD /* IQPreviousNextView.m in Sources */,
 				050C076B1DDA994A008450CD /* UIAlertView+AFNetworking.m in Sources */,
 				050DEBE01DD9BCFE009D0129 /* ViewController.m in Sources */,
@@ -1604,14 +1609,15 @@
 				050C072B1DDA993E008450CD /* FMDatabasePool.m in Sources */,
 				050C07291DDA993E008450CD /* FMDatabase.m in Sources */,
 				05FF0A071E149A4C006E3FB2 /* TYViewStorage.m in Sources */,
+				05FF0A2D1E149F26006E3FB2 /* NSDate+Addition.m in Sources */,
 				050C076A1DDA994A008450CD /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				05FF09CA1E149A41006E3FB2 /* SDWebImageDecoder.m in Sources */,
-				050C06441DDA97BB008450CD /* THButton.m in Sources */,
 				050C07071DDA991C008450CD /* MJRefreshBackStateFooter.m in Sources */,
 				05FF0A041E149A4C006E3FB2 /* TYTextContainer+Extended.m in Sources */,
 				050C076C1DDA994A008450CD /* UIButton+AFNetworking.m in Sources */,
 				050C072D1DDA993E008450CD /* FMResultSet.m in Sources */,
 				050C070C1DDA991C008450CD /* MJRefreshConst.m in Sources */,
+				05FF0A301E149F33006E3FB2 /* UIImageView+CornerRadius.m in Sources */,
 				050C07081DDA991C008450CD /* MJRefreshGifHeader.m in Sources */,
 				050C070E1DDA991C008450CD /* UIScrollView+MJRefresh.m in Sources */,
 				050C070D1DDA991C008450CD /* UIScrollView+MJExtension.m in Sources */,
@@ -1620,10 +1626,14 @@
 				050C06CE1DDA9914008450CD /* MBProgressHUD.m in Sources */,
 				05FF0A281E149BD4006E3FB2 /* CMHttpResponseModel.m in Sources */,
 				05FF09D41E149A41006E3FB2 /* UIImageView+WebCache.m in Sources */,
+				05FF0A511E149FD9006E3FB2 /* THButton.m in Sources */,
+				05FF0A531E149FD9006E3FB2 /* THTextView.m in Sources */,
+				05FF0A4E1E149FD9006E3FB2 /* DisplayHelper.m in Sources */,
 				05FF0A121E149AB4006E3FB2 /* CMUserDefaults.m in Sources */,
 				050C07631DDA994A008450CD /* AFURLResponseSerialization.m in Sources */,
 				05FF0A021E149A4C006E3FB2 /* TYImageStorage.m in Sources */,
 				050C07681DDA994A008450CD /* AFImageDownloader.m in Sources */,
+				05FF0A4D1E149FD9006E3FB2 /* CMUDButton.m in Sources */,
 				05FF09D11E149A41006E3FB2 /* UIImage+MultiFormat.m in Sources */,
 				050C07641DDA994A008450CD /* AFURLSessionManager.m in Sources */,
 				05FF09791E149A24006E3FB2 /* YLInfiniteScrollView.m in Sources */,
@@ -1633,14 +1643,16 @@
 				05FF0A271E149BD4006E3FB2 /* CMHttpRequestModel.m in Sources */,
 				050C076E1DDA994A008450CD /* UIProgressView+AFNetworking.m in Sources */,
 				050C07031DDA991C008450CD /* MJRefreshAutoNormalFooter.m in Sources */,
+				05FF0A4B1E149FD9006E3FB2 /* CMCustomViewFactory.m in Sources */,
 				05FF09C71E149A41006E3FB2 /* NSData+ImageContentType.m in Sources */,
+				05FF0A581E14A039006E3FB2 /* AppDelegate.mm in Sources */,
 				05FF0A2A1E149BD4006E3FB2 /* CMHttpStateTools.m in Sources */,
 				050C06BD1DDA9909008450CD /* IQUIViewController+Additions.m in Sources */,
-				050C07E61DDAD982008450CD /* CMCustomViewFactory.m in Sources */,
 				05FF09D31E149A41006E3FB2 /* UIImageView+HighlightedWebCache.m in Sources */,
 				05FF09D21E149A41006E3FB2 /* UIImage+WebP.m in Sources */,
 				050C077C1DDA9DA1008450CD /* UITextField+Font.m in Sources */,
 				050C06C21DDA9909008450CD /* IQBarButtonItem.m in Sources */,
+				05FF0A4C1E149FD9006E3FB2 /* NHPageViewController.m in Sources */,
 				050C076F1DDA994A008450CD /* UIRefreshControl+AFNetworking.m in Sources */,
 				05FF09741E149A05006E3FB2 /* CoreLabel.m in Sources */,
 				050C072A1DDA993E008450CD /* FMDatabaseAdditions.m in Sources */,
@@ -1655,12 +1667,12 @@
 				050C07A51DDAAA76008450CD /* CMMeViewController.m in Sources */,
 				050C079C1DDAA990008450CD /* CMNavViewController.m in Sources */,
 				050C06C61DDA9909008450CD /* IQUIView+IQKeyboardToolbar.m in Sources */,
-				050C06481DDA97BB008450CD /* THTipsView.m in Sources */,
 				050C07621DDA994A008450CD /* AFURLRequestSerialization.m in Sources */,
 				050C075F1DDA994A008450CD /* AFNetworkReachabilityManager.m in Sources */,
-				050DEC131DD9BEB4009D0129 /* AppDelegate.m in Sources */,
 				050C07691DDA994A008450CD /* AFNetworkActivityIndicatorManager.m in Sources */,
+				05FF0A501E149FD9006E3FB2 /* THActionSheet.m in Sources */,
 				05FF09731E149A05006E3FB2 /* GTMBase64.m in Sources */,
+				05FF0A541E149FD9006E3FB2 /* THTipsView.m in Sources */,
 				05FF09C81E149A41006E3FB2 /* SDImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

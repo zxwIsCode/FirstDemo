@@ -13,6 +13,8 @@
 #define FullFormat          @"yyyy-MM-dd HH:mm:ss"
 #define LocalFormat          @"MM月dd日"
 
+#define CALENDAR_YMDHM_FLAGS               (NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitWeekday|NSCalendarUnitHour|NSCalendarUnitMinute)
+
 static NSDateFormatter *df;
 
 @implementation NSDate (Addition)
@@ -92,14 +94,14 @@ static NSDateFormatter *df;
 
 - (NSUInteger)getWeekday {
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *weekdayComponents = [calendar components:(NSWeekdayCalendarUnit) fromDate:self];
+    NSDateComponents *weekdayComponents = [calendar components:(NSCalendarUnitWeekday) fromDate:self];
     return [weekdayComponents weekday];
 }
 
 - (NSUInteger)getYears
 {
     NSCalendar* chineseClendar = [NSCalendar currentCalendar];
-    NSDateComponents *targetCom = [ chineseClendar components:NSYearCalendarUnit fromDate:self];
+    NSDateComponents *targetCom = [ chineseClendar components:NSCalendarUnitYear fromDate:self];
     
     return [targetCom year];
 }
@@ -107,7 +109,7 @@ static NSDateFormatter *df;
 - (NSUInteger)getMonth
 {
     NSCalendar* chineseClendar = [NSCalendar currentCalendar];
-    NSDateComponents *targetCom = [ chineseClendar components:NSMonthCalendarUnit fromDate:self];
+    NSDateComponents *targetCom = [ chineseClendar components:NSCalendarUnitMonth fromDate:self];
     
     return [targetCom month];
 }
@@ -115,15 +117,15 @@ static NSDateFormatter *df;
 - (NSUInteger)getDay
 {
     NSCalendar* chineseClendar = [NSCalendar currentCalendar];
-    NSDateComponents *targetCom = [ chineseClendar components:NSDayCalendarUnit fromDate:self];
+    NSDateComponents *targetCom = [ chineseClendar components:NSCalendarUnitDay fromDate:self];
     
     return  [targetCom day];
 }
 
 - (NSUInteger)getIntervalOtherDate:(NSDate *)other
 {
-    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    unsigned int unitFlags = NSDayCalendarUnit;
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    unsigned int unitFlags = NSCalendarUnitDay;
     NSDateComponents *comps = [gregorian components:unitFlags
                                            fromDate:self
                                              toDate:other
@@ -156,7 +158,7 @@ static NSDateFormatter *df;
     NSDate *currTime = [NSDate date];
     
     NSCalendar* chineseClendar = [NSCalendar currentCalendar];
-    NSUInteger unitFlags = NSHourCalendarUnit|NSMinuteCalendarUnit|NSSecondCalendarUnit|NSDayCalendarUnit|NSMonthCalendarUnit|NSYearCalendarUnit;
+    NSUInteger unitFlags = NSCalendarUnitHour|NSCalendarUnitMinute|NSCalendarUnitSecond|NSCalendarUnitDay|NSCalendarUnitMonth|NSCalendarUnitYear;
     //NSDateComponents *cps = [ chineseClendar components:unitFlags fromDate:date toDate:startDate options:0];
     NSDateComponents *targetCom = [ chineseClendar components:unitFlags fromDate:self];
     NSDateComponents *NowCom = [ chineseClendar components:unitFlags fromDate:currTime];
@@ -224,7 +226,7 @@ static NSDateFormatter *df;
 {
     NSCalendar* calendar = [NSCalendar currentCalendar];
     
-    unsigned unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit |  NSDayCalendarUnit;
+    unsigned unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth |  NSCalendarUnitDay;
     NSDateComponents* comp1 = [calendar components:unitFlags fromDate:self];
     NSDateComponents* comp2 = [calendar components:unitFlags fromDate:date2];
     
@@ -237,7 +239,7 @@ static NSDateFormatter *df;
 {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     
-    unsigned unitFlags = NSYearCalendarUnit;
+    unsigned unitFlags = NSCalendarUnitYear;
     NSDateComponents *curr = [calendar components:unitFlags fromDate:[NSDate date]];
     NSDateComponents *user = [calendar components:unitFlags fromDate:self];
     
@@ -249,11 +251,46 @@ static NSDateFormatter *df;
 {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     
-    unsigned unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit;
+    unsigned unitFlags = NSCalendarUnitYear | NSCalendarUnitMonth;
     NSDateComponents *curr = [calendar components:unitFlags fromDate:[NSDate date]];
     NSDateComponents *user = [calendar components:unitFlags fromDate:self];
     
     return (curr.year == user.year) && (curr.month == user.month);
+}
+
+
+//------------------------------------------------------------------------------
+//  时间字符串（2016-05-06 12:25:36）转化为时间戳
+//------------------------------------------------------------------------------
++(NSString *)timeStampTurnToString:(NSString *)dateStr {
+    
+    NSDate *date =[NSDate formateDateWithString:dateStr];
+    
+    NSString *timeStamp =[NSString stringWithFormat:@"%ld",(long)[date timeIntervalSince1970]];
+    return timeStamp;
+    
+    
+}
+
+//------------------------------------------------------------------------------
+//  时间戳转化为时间格式
+//  paramsKind:
+//@"/":表示2016/05/06 12:25
+//@"-":表示2016-05-06 12:25
+//------------------------------------------------------------------------------
+// time 目前是秒
++(NSString *)IntervalToDateString:(long long)time andParms:(NSString *)paramsKind{
+    NSCalendar *cal     = [NSCalendar currentCalendar];
+    NSDate *date        = [NSDate dateWithTimeIntervalSince1970:time];
+//    NSDate *date        = [NSDate dateWithTimeIntervalSince1970:(time / 1000)];
+
+    NSDateComponents *comp = [cal components:CALENDAR_YMDHM_FLAGS fromDate:date];
+//    return [NSString stringWithFormat:@"%ld-%ld-%ld",(long)comp.year,(long)comp.month,(long)comp.day];
+    if([paramsKind isEqualToString:@"/"]) {
+        return [NSString stringWithFormat:@"%04ld/%02ld/%02ld %02ld:%02ld",(long)comp.year,(long)comp.month,(long)comp.day,(long)comp.hour,(long)comp.minute];
+    }
+    return [NSString stringWithFormat:@"%04ld-%02ld-%02ld %02ld:%02ld",(long)comp.year,(long)comp.month,(long)comp.day,(long)comp.hour,(long)comp.minute];
+    
 }
 
 @end

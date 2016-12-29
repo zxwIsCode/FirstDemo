@@ -8,6 +8,8 @@
 
 #import "DisplayHelper.h"
 #import "MBProgressHUD.h"
+//error
+//success
 
 @implementation DisplayHelper
 
@@ -49,7 +51,7 @@
     // Add HUD to screen
     [window addSubview:HUD];
     
-    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MBProgressHUD_con_success.png"]];
+    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"success"]];
     HUD.mode = MBProgressHUDModeCustomView;
     HUD.labelText = title;
     HUD.detailsLabelText = message;
@@ -79,7 +81,7 @@
     [window addSubview:HUD];
     
     
-//    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MBProgressHUD_con_failed.png"]];
+//    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"error"]];
     HUD.mode = MBProgressHUDModeCustomView;
     HUD.labelText = title;
     HUD.detailsLabelText = message;
@@ -94,7 +96,7 @@
     // Add HUD to screen
     [window addSubview:HUD];
     
-    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MBProgressHUD_con_success.png"]];
+    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"success"]];
     HUD.mode = MBProgressHUDModeCustomView;
     HUD.labelText = message;
     [HUD show:YES];
@@ -114,7 +116,7 @@
     [window addSubview:HUD];
     
     
-    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MBProgressHUD_con_failed.png"]];
+    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"error"]];
     HUD.mode = MBProgressHUDModeCustomView;
     HUD.labelText = message;
     [HUD show:YES];
@@ -129,7 +131,7 @@
     // Add HUD to screen
     [aView addSubview:HUD];
     
-    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MBProgressHUD_con_success.png"]];
+    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"success"]];
     HUD.mode = MBProgressHUDModeCustomView;
     HUD.labelText = title;
     HUD.detailsLabelText = message;
@@ -146,7 +148,7 @@
     // Add HUD to screen
     [aView addSubview:HUD];
     
-    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MBProgressHUD_con_failed.png"]];
+    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"error"]];
     HUD.mode = MBProgressHUDModeCustomView;
     HUD.labelText = title;
     HUD.detailsLabelText = message;
@@ -161,7 +163,7 @@
     // Add HUD to screen
     [aView addSubview:HUD];
     
-    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MBProgressHUD_con_success.png"]];
+    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"success"]];
     HUD.mode = MBProgressHUDModeCustomView;
     HUD.labelText = message;
     [HUD show:YES];
@@ -177,7 +179,7 @@
     // Add HUD to screen
     [aView addSubview:HUD];
     
-    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MBProgressHUD_con_failed.png"]];
+    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"error"]];
     HUD.mode = MBProgressHUDModeCustomView;
     HUD.labelText = message;
     [HUD show:YES];
@@ -191,7 +193,7 @@
         HUD = [[MBProgressHUD alloc] initWithView:window];
     }
     [window addSubview:HUD];
-    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MBProgressHUD_con_success.png"]];
+    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"success"]];
     HUD.mode = MBProgressHUDModeCustomView;
     HUD.labelText = message;
     [HUD show:YES];
@@ -205,7 +207,7 @@
         HUD = [[MBProgressHUD alloc] initWithView:window];
     }
     [window addSubview:HUD];
-    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MBProgressHUD_con_success.png"]];
+    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"success"]];
     HUD.mode = MBProgressHUDModeCustomView;
     HUD.labelText = message;
     [HUD show:YES];
@@ -220,7 +222,7 @@
     }
     
     [window addSubview:HUD];
-    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MBProgressHUD_con_failed.png"]];
+    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"error"]];
     HUD.mode = MBProgressHUDModeCustomView;
     HUD.labelText = message;
     [HUD show:YES];
@@ -234,16 +236,13 @@
         HUD = [[MBProgressHUD alloc] initWithView:window];
     }
     [window addSubview:HUD];
-    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MBProgressHUD_con_failed.png"]];
+    HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"error"]];
     HUD.mode = MBProgressHUDModeCustomView;
     HUD.labelText = message;
     [HUD show:YES];
     [HUD hide:YES afterDelay:interval];
 }
 
-+ (void)displayLoadingAlert:(NSString *)message onView:(UIView *)aView
-{
-    
-}
+
 
 @end

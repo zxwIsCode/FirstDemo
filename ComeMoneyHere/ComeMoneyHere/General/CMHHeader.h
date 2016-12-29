@@ -77,21 +77,27 @@ UIKIT_STATIC_INLINE AppDelegate *appDelegate()
 //判断设备是否为高清iPad
 #define iPadRetina ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(2048, 1536), [[UIScreen mainScreen] currentMode].size) : NO)
 
-#define ScreenHeight [[UIScreen mainScreen] bounds].size.height
-
 
 
 #pragma mark - Basic
-
+#define NavigationBar_BarHeight  64
 #define NavigationBar_HEIGHT 44
 #define TabBar_HEIGHT 49
-
+#define RechargeViewHeight  100 *kAppScale
+#define Ten 10 *kAppScale
+#define Num_Zero 0
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+#define kAppScale SCREEN_WIDTH/375.0f
+/*
+ 文本
+ */
+#define kButtonFont 18 *kAppScale
+
+
 #define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
 #define CurrentSystemVersion ([[UIDevice currentDevice] systemVersion])
 #define CurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])
-
 
 //use dlog to print while in debug model
 //#ifdef DEBUG
@@ -152,6 +158,9 @@ UIKIT_STATIC_INLINE AppDelegate *appDelegate()
 #pragma mark - color functions
 #define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
 #define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+
+#define RGB(r, g, b)             [UIColor colorWithRed:((r) / 255.0) green:((g) / 255.0) blue:((b) / 255.0) alpha:1.0]
+
 
 // rgb颜色转换（16进制->10进制）
 #define UIColorFromHexValue(hexValue) [UIColor colorWithRed:((float)((hexValue & 0xFF0000) >> 16))/255.0 green:((float)((hexValue & 0xFF00) >> 8))/255.0 blue:((float)(hexValue & 0xFF))/255.0 alpha:1.0]
@@ -260,6 +269,8 @@ return shared##classname; \
 
 static NSString *const UMENG_APP_KEY = @"564e8be667e58ee2dd0072f4";
 #define KTestUMengAppKey  @"5677dcf3e0f55ad8f9001a68"
+#define kDefaultIp @"http://192.168.1.186/Aboost/Public"
+
 
 
 #endif /* CMHHeader_h */
