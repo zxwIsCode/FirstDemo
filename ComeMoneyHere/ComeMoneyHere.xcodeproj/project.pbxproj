@@ -120,6 +120,7 @@
 		050DEBE81DD9BCFE009D0129 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050DEBE61DD9BCFE009D0129 /* LaunchScreen.storyboard */; };
 		050DEBF31DD9BCFE009D0129 /* ComeMoneyHereTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 050DEBF21DD9BCFE009D0129 /* ComeMoneyHereTests.m */; };
 		050DEBFE1DD9BCFE009D0129 /* ComeMoneyHereUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 050DEBFD1DD9BCFE009D0129 /* ComeMoneyHereUITests.m */; };
+		059B80181E1B86E600E38AC9 /* CMSendTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 059B80141E1B86E600E38AC9 /* CMSendTaskViewController.m */; };
 		05FF09721E149A05006E3FB2 /* Base64Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF09681E149A05006E3FB2 /* Base64Util.m */; };
 		05FF09731E149A05006E3FB2 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF096A1E149A05006E3FB2 /* GTMBase64.m */; };
 		05FF09741E149A05006E3FB2 /* CoreLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF096E1E149A05006E3FB2 /* CoreLabel.m */; };
@@ -178,7 +179,6 @@
 		05FF0A721E14A28C006E3FB2 /* CMNewFetureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A631E14A28C006E3FB2 /* CMNewFetureViewController.m */; };
 		05FF0A751E14A28C006E3FB2 /* CMCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A6C1E14A28C006E3FB2 /* CMCustomTabBar.m */; };
 		05FF0A761E14A28C006E3FB2 /* CMTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A6E1E14A28C006E3FB2 /* CMTabBarButton.m */; };
-		05FF0A7B1E14A3B3006E3FB2 /* CMSendTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF0A7A1E14A3B3006E3FB2 /* CMSendTaskViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -398,6 +398,8 @@
 		050DEBF91DD9BCFE009D0129 /* ComeMoneyHereUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComeMoneyHereUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		050DEBFD1DD9BCFE009D0129 /* ComeMoneyHereUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComeMoneyHereUITests.m; sourceTree = "<group>"; };
 		050DEBFF1DD9BCFE009D0129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		059B80131E1B86E600E38AC9 /* CMSendTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMSendTaskViewController.h; sourceTree = "<group>"; };
+		059B80141E1B86E600E38AC9 /* CMSendTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMSendTaskViewController.m; sourceTree = "<group>"; };
 		05FF09671E149A05006E3FB2 /* Base64Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Util.h; sourceTree = "<group>"; };
 		05FF09681E149A05006E3FB2 /* Base64Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64Util.m; sourceTree = "<group>"; };
 		05FF09691E149A05006E3FB2 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
@@ -522,8 +524,6 @@
 		05FF0A6C1E14A28C006E3FB2 /* CMCustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMCustomTabBar.m; sourceTree = "<group>"; };
 		05FF0A6D1E14A28C006E3FB2 /* CMTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMTabBarButton.h; sourceTree = "<group>"; };
 		05FF0A6E1E14A28C006E3FB2 /* CMTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMTabBarButton.m; sourceTree = "<group>"; };
-		05FF0A791E14A3B3006E3FB2 /* CMSendTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMSendTaskViewController.h; sourceTree = "<group>"; };
-		05FF0A7A1E14A3B3006E3FB2 /* CMSendTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMSendTaskViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -885,8 +885,9 @@
 			isa = PBXGroup;
 			children = (
 				050C07851DDAA8C3008450CD /* Controllers */,
-				050C07861DDAA8C3008450CD /* Models */,
-				050C07871DDAA8C3008450CD /* Views */,
+				059B80021E1B863900E38AC9 /* Helper */,
+				059B80031E1B863900E38AC9 /* Models */,
+				059B80041E1B863900E38AC9 /* Views */,
 			);
 			path = CommondCode;
 			sourceTree = "<group>";
@@ -900,26 +901,13 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		050C07861DDAA8C3008450CD /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		050C07871DDAA8C3008450CD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		050C07881DDAA8C3008450CD /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				059B800B1E1B867800E38AC9 /* Helper */,
+				059B800C1E1B867800E38AC9 /* Models */,
+				059B800D1E1B867800E38AC9 /* Views */,
 				050C07891DDAA8C3008450CD /* Controllers */,
-				050C078A1DDAA8C3008450CD /* Models */,
-				050C078B1DDAA8C3008450CD /* Views */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -933,26 +921,13 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		050C078A1DDAA8C3008450CD /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		050C078B1DDAA8C3008450CD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		050C07901DDAA8C3008450CD /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				059B800E1E1B86CE00E38AC9 /* Helper */,
+				059B800F1E1B86CE00E38AC9 /* Models */,
+				059B80101E1B86CE00E38AC9 /* Views */,
 				050C07911DDAA8C3008450CD /* Controllers */,
-				050C07921DDAA8C3008450CD /* Models */,
-				050C07931DDAA8C3008450CD /* Views */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -964,20 +939,6 @@
 				050C07A41DDAAA76008450CD /* CMMeViewController.m */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		050C07921DDAA8C3008450CD /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		050C07931DDAA8C3008450CD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		050C07A61DDAAF44008450CD /* tabbar */ = {
@@ -1098,7 +1059,7 @@
 		050DEC0B1DD9BD19009D0129 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				05FF0A781E14A378006E3FB2 /* SendTask */,
+				059B80111E1B86E600E38AC9 /* SendTask */,
 				05FF0A5A1E14A28C006E3FB2 /* Main */,
 				050C07841DDAA8C3008450CD /* CommondCode */,
 				050C07881DDAA8C3008450CD /* Home */,
@@ -1161,6 +1122,110 @@
 			);
 			name = "Helper(Tool)";
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		059B80021E1B863900E38AC9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		059B80031E1B863900E38AC9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		059B80041E1B863900E38AC9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		059B800B1E1B867800E38AC9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		059B800C1E1B867800E38AC9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		059B800D1E1B867800E38AC9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		059B800E1E1B86CE00E38AC9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		059B800F1E1B86CE00E38AC9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		059B80101E1B86CE00E38AC9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		059B80111E1B86E600E38AC9 /* SendTask */ = {
+			isa = PBXGroup;
+			children = (
+				059B80121E1B86E600E38AC9 /* Controllers */,
+				059B80151E1B86E600E38AC9 /* Helper */,
+				059B80161E1B86E600E38AC9 /* Models */,
+				059B80171E1B86E600E38AC9 /* Views */,
+			);
+			path = SendTask;
+			sourceTree = "<group>";
+		};
+		059B80121E1B86E600E38AC9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				059B80131E1B86E600E38AC9 /* CMSendTaskViewController.h */,
+				059B80141E1B86E600E38AC9 /* CMSendTaskViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		059B80151E1B86E600E38AC9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		059B80161E1B86E600E38AC9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		059B80171E1B86E600E38AC9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		05FF09661E149A05006E3FB2 /* Base64 */ = {
@@ -1397,15 +1462,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		05FF0A781E14A378006E3FB2 /* SendTask */ = {
-			isa = PBXGroup;
-			children = (
-				05FF0A791E14A3B3006E3FB2 /* CMSendTaskViewController.h */,
-				05FF0A7A1E14A3B3006E3FB2 /* CMSendTaskViewController.m */,
-			);
-			name = SendTask;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1589,7 +1645,7 @@
 				05FF0A131E149AB4006E3FB2 /* CMWechatPayManager.m in Sources */,
 				050C07661DDA994A008450CD /* README.md in Sources */,
 				050C06BC1DDA9909008450CD /* IQUIView+Hierarchy.m in Sources */,
-				05FF0A7B1E14A3B3006E3FB2 /* CMSendTaskViewController.m in Sources */,
+				059B80181E1B86E600E38AC9 /* CMSendTaskViewController.m in Sources */,
 				050C06B91DDA9909008450CD /* IQNSArray+Sort.m in Sources */,
 				050C06FF1DDA991C008450CD /* MJRefreshComponent.m in Sources */,
 				050C07001DDA991C008450CD /* MJRefreshFooter.m in Sources */,

@@ -45,13 +45,15 @@
     CGFloat imageViewH =self.scrollView.frame.size.height;
     
     for (int index =0; index <kNewFetureTotalPage; index ++) {
-        NSString *imageName;
-        if(SCREEN_HEIGHT ==568) {
-            imageName =[NSString stringWithFormat:@"NewFeture_%d_iPhone4",index +1];
-        }else {
-            imageName =[NSString stringWithFormat:@"NewFeture_%d",index +1];
-        }
-        UIImageView *imageView =[[UIImageView alloc]initWithImage:[UIImage imageNamed:imageName]];
+//        NSString *imageName;
+//        if(SCREEN_HEIGHT ==568) {
+//            imageName =[NSString stringWithFormat:@"NewFeture_%d_iPhone4",index +1];
+//        }else {
+//            imageName =[NSString stringWithFormat:@"NewFeture_%d",index +1];
+//        }
+//        UIImageView *imageView =[[UIImageView alloc]initWithImage:[UIImage imageNamed:imageName]];
+        UIImageView *imageView =[[UIImageView alloc]init];
+        imageView.backgroundColor =[UIColor redColor];
         imageView.frame =CGRectMake(imageViewW *index, 0, imageViewW, imageViewH);
         [self.scrollView addSubview:imageView];
         
