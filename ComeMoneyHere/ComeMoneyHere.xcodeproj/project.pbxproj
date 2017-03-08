@@ -120,6 +120,7 @@
 		050DEBE81DD9BCFE009D0129 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 050DEBE61DD9BCFE009D0129 /* LaunchScreen.storyboard */; };
 		050DEBF31DD9BCFE009D0129 /* ComeMoneyHereTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 050DEBF21DD9BCFE009D0129 /* ComeMoneyHereTests.m */; };
 		050DEBFE1DD9BCFE009D0129 /* ComeMoneyHereUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 050DEBFD1DD9BCFE009D0129 /* ComeMoneyHereUITests.m */; };
+		0534F6EF1E6FF7B700B6390F /* FALRButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0534F6EE1E6FF7B700B6390F /* FALRButton.m */; };
 		059B80181E1B86E600E38AC9 /* CMSendTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 059B80141E1B86E600E38AC9 /* CMSendTaskViewController.m */; };
 		05FF09721E149A05006E3FB2 /* Base64Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF09681E149A05006E3FB2 /* Base64Util.m */; };
 		05FF09731E149A05006E3FB2 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FF096A1E149A05006E3FB2 /* GTMBase64.m */; };
@@ -398,6 +399,8 @@
 		050DEBF91DD9BCFE009D0129 /* ComeMoneyHereUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComeMoneyHereUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		050DEBFD1DD9BCFE009D0129 /* ComeMoneyHereUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComeMoneyHereUITests.m; sourceTree = "<group>"; };
 		050DEBFF1DD9BCFE009D0129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0534F6ED1E6FF7B700B6390F /* FALRButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FALRButton.h; sourceTree = "<group>"; };
+		0534F6EE1E6FF7B700B6390F /* FALRButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FALRButton.m; sourceTree = "<group>"; };
 		059B80131E1B86E600E38AC9 /* CMSendTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMSendTaskViewController.h; sourceTree = "<group>"; };
 		059B80141E1B86E600E38AC9 /* CMSendTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMSendTaskViewController.m; sourceTree = "<group>"; };
 		05FF09671E149A05006E3FB2 /* Base64Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Util.h; sourceTree = "<group>"; };
@@ -1397,6 +1400,8 @@
 		05FF0A381E149FD9006E3FB2 /* PublicView */ = {
 			isa = PBXGroup;
 			children = (
+				0534F6ED1E6FF7B700B6390F /* FALRButton.h */,
+				0534F6EE1E6FF7B700B6390F /* FALRButton.m */,
 				05FF0A391E149FD9006E3FB2 /* CMUDButton.h */,
 				05FF0A3A1E149FD9006E3FB2 /* CMUDButton.m */,
 				05FF0A3B1E149FD9006E3FB2 /* DisplayHelper.h */,
@@ -1729,6 +1734,7 @@
 				05FF09CE1E149A41006E3FB2 /* SDWebImagePrefetcher.m in Sources */,
 				05FF0A271E149BD4006E3FB2 /* CMHttpRequestModel.m in Sources */,
 				050C076E1DDA994A008450CD /* UIProgressView+AFNetworking.m in Sources */,
+				0534F6EF1E6FF7B700B6390F /* FALRButton.m in Sources */,
 				050C07031DDA991C008450CD /* MJRefreshAutoNormalFooter.m in Sources */,
 				05FF0A4B1E149FD9006E3FB2 /* CMCustomViewFactory.m in Sources */,
 				05FF09C71E149A41006E3FB2 /* NSData+ImageContentType.m in Sources */,
