@@ -1468,7 +1468,7 @@
 				TargetAttributes = {
 					050DEBD41DD9BCFE009D0129 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = V3VWCC65R7;
+						DevelopmentTeam = W4G5NYC77D;
 						ProvisioningStyle = Automatic;
 					};
 					050DEBED1DD9BCFE009D0129 = {
@@ -1838,7 +1838,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V3VWCC65R7;
+				DEVELOPMENT_TEAM = W4G5NYC77D;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ComeMoneyHere/Vendor/ShareSDK",
@@ -1866,7 +1866,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V3VWCC65R7;
+				DEVELOPMENT_TEAM = W4G5NYC77D;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ComeMoneyHere/Vendor/ShareSDK",

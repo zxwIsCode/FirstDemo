@@ -57,7 +57,10 @@
 
 -(void)setupCustomTabBar {
     CMCustomTabBar *customTabBar =[[CMCustomTabBar alloc]init];
-    CGFloat tabBarHeight =84 *kAppScale;
+
+//    CGFloat tabBarHeight =84 *kAppScale;
+#warning 此处更改的高度后在CMCustomTabBar.m中的#warning此处更改也要改一下
+    CGFloat tabBarHeight =49.0;
     customTabBar.frame =CGRectMake(0, 49.0 -tabBarHeight, SCREEN_WIDTH, tabBarHeight);
     [self.tabBar addSubview:customTabBar];
     self.customTabBar =customTabBar;

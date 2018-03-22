@@ -32,7 +32,9 @@
 -(void)creatAllTabBarSubViews:(UITabBarItem *)item andIndex:(NSInteger)index{
     
     CGFloat buttonW =self.frame.size.width/buttonCount;
-    CGFloat buttonY =30 *kAppScale;
+    #warning 此处更改也要改一下
+//    CGFloat buttonY =30 *kAppScale;
+    CGFloat buttonY = 0;
     CGFloat buttonH =self.frame.size.height -buttonY -5 *kAppScale;
     
     CGFloat buttonX =buttonW *index;
