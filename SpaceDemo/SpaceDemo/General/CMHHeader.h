@@ -13,6 +13,32 @@
 
 #import "AppDelegate.h"
 
+// ##################适配iPhone X尺寸专用#################
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+// 状态栏高度
+#define kStatusBarHeight (kScreenHeight >= 812)?44:20
+// 状态栏和Nav合计高度
+#define kNavBarHeight kStatusBarHeight + 44
+
+////##############nav为默认的透明状态##################
+//// iOS11之后适配有效高度（nav为默认的透明状态,）
+//#define kSmallHeight kScreenHeight  - ((kScreenHeight >= 812)?10:0)
+//
+//// iOS11之后的（nav为默认的透明状态）
+//#define kSmallHeightY (kScreenHeight >= 812)?kNavBarHeight:0
+
+
+//##############nav为非透明状态##################
+// iOS11之后适配有效高度（nav为非透明状态,）
+#define kSmallHeight kScreenHeight  - (kNavBarHeight) -((kScreenHeight >= 812)?10:0)
+
+// iOS11之后的（nav为非透明状态）
+#define kSmallHeightY 0
+
+// ##################适配iPhone X尺寸专用#################
+
 ///加载图片
 #define IMG_INIT(KEY) [UIImage imageNamed:KEY]
 
