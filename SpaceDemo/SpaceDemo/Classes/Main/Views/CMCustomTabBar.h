@@ -14,7 +14,7 @@
 
 @end
 
-@interface CMCustomTabBar : UIImageView
+@interface CMCustomTabBar : UITabBar
 
 @property(nonatomic,weak)id<CMCustomTabBarDelegate> delegate;
 -(void)creatAllTabBarSubViews:(UITabBarItem *)item andIndex:(NSInteger)index;

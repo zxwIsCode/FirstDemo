@@ -22,12 +22,20 @@
 -(instancetype)init {
     if (self =[super init]) {
         self.userInteractionEnabled =YES;
-        self.image =[UIImage imageNamed:@"icon_tabBarBgdb"];
+//        self.image =[UIImage imageNamed:@"icon_tabBarBgdb"];
     }
     return self;
 }
 -(void)layoutSubviews {
     [super layoutSubviews];
+    // iOS11.0之后每次更新界面都会删除新生成的系统tabBar
+    for (UIView *tabBarButton in self.subviews) {
+        if ([tabBarButton isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
+            [tabBarButton removeFromSuperview];
+        }
+        
+    }
+    
 }
 -(void)creatAllTabBarSubViews:(UITabBarItem *)item andIndex:(NSInteger)index{
     

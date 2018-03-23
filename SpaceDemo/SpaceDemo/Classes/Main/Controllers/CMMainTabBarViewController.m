@@ -43,28 +43,33 @@
     // Do any additional setup after loading the view.
 }
 
--(void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    for (UIView *child in self.tabBar.subviews) {
-        if ([child isKindOfClass:[UIControl class]]) {
-            [child removeFromSuperview];
-        }
-    }
-}
+// iOS11之后下面这种方式不管用了，因为一旦切换界面就会有系统tabBar的再次刷新显示
+//-(void)viewWillAppear:(BOOL)animated {
+//    [super viewWillAppear:animated];
+//    for (UIView *child in self.tabBar.subviews) {
+//        if ([child isKindOfClass:[UIControl class]]) {
+//            [child removeFromSuperview];
+//        }
+//    }
+//}
 
 #pragma mark - Private Methods
 
 
 -(void)setupCustomTabBar {
     CMCustomTabBar *customTabBar =[[CMCustomTabBar alloc]init];
-
-//    CGFloat tabBarHeight =84 *kAppScale;
+    
+    //    CGFloat tabBarHeight =84 *kAppScale;
 #warning 此处更改的高度后在CMCustomTabBar.m中的#warning此处更改也要改一下
     CGFloat tabBarHeight =49.0;
     customTabBar.frame =CGRectMake(0, 49.0 -tabBarHeight, SCREEN_WIDTH, tabBarHeight);
-    [self.tabBar addSubview:customTabBar];
+    //    [self.tabBar addSubview:customTabBar];
     self.customTabBar =customTabBar;
     self.customTabBar.delegate =self;
+    // 下面这句话相当于把它加到系统tabBar上，有个好处是因为系统tabBar属性是readonly，但可以通过KVC方式去更改，且在iOS11之后必须以覆盖形式放到tabBar上面
+    [self setValue:self.customTabBar forKeyPath:@"tabBar"];
+    
+    
 }
 
 /**
@@ -73,16 +78,16 @@
 - (void)setupAllChildViewControllers
 {
     // 1.首页
-    [self setupChildViewController:self.homeVC title:@"首页" imageName:@"icon_shouye" selectedImageName:@"icon_shouyebian" andIndex:0];
+    [self setupChildViewController:self.homeVC title:@"首页" imageName:@"tabbar_setting" selectedImageName:@"tabbar_settingHL" andIndex:0];
     
     // 2.发布任务
-    [self setupChildViewController:self.sendTaskVC title:@"发布任务" imageName:@"icon_renwu" selectedImageName:@"icon_renwubian" andIndex:1];
+    [self setupChildViewController:self.sendTaskVC title:@"聊天" imageName:@"tabbar_chats" selectedImageName:@"tabbar_chatsHL" andIndex:1];
     
     // 3.推荐码
-    [self setupChildViewController:self.commondVC title:@"推荐码" imageName:@"icon_erweima" selectedImageName:@"icon_erweimabian" andIndex:2];
+    [self setupChildViewController:self.commondVC title:@"联系人" imageName:@"tabbar_contacts" selectedImageName:@"tabbar_contactsHL" andIndex:2];
     
     // 4.用户信息
-    [self setupChildViewController:self.meVC title:@"用户信息" imageName:@"icon_yonghu" selectedImageName:@"icon_yonghubian" andIndex:3];
+    [self setupChildViewController:self.meVC title:@"设置" imageName:@"tabbar_setting" selectedImageName:@"tabbar_settingHL" andIndex:3];
     
 }
 
